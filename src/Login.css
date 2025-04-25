@@ -1,0 +1,83 @@
+/* Login.css */
+
+/* Card container adjustments */
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+/* Gradient button */
+.btn-gradient {
+  background: linear-gradient(90deg, #0d47a1, #00d4ff);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #08306b, #00a3cc);
+  transform: translateY(-2px);
+  transition:transform 0.4s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Input fields styling */
+.input-field {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  transition: all 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+  color: #fff;
+  outline: none;
+}
+
+/* Form labels */
+.form-label {
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+/* Links */
+a.text-light {
+  color: #e0f7fa;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+a.text-light:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Card shadow override for deeper lift */
+.shadow-lg {
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card {
+    padding: 1.5rem !important;
+  }
+  h1 {
+    font-size: 2rem !important;
+    text-shadow: 0 0 6px rgba(0, 212, 255, 0.6);
+  }
+  .btn-gradient {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
